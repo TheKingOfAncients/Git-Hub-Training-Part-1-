@@ -1,0 +1,19 @@
+============================================================
+
+#Script to create a bare clone of a repository
+
+git clone --bare https://github.com/EXAMPLE-USER/FORK.git
+
+============================================================
+
+#Script to Mirror-push the repository back to the same remote URL
+
+git --git-dir FORK.git push --mirror https://github.com/EXAMPLE-USER/FORK.git
+
+============================================================
+
+#Script to remove temporary local clone you created earlier.
+
+rm -rf FORK.git
+
+============================================================
